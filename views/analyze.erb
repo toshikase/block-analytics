@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Block Analytics</title>
+</head>
+<body>
+  <h2>リスク評価結果は下記の通りです</h2>
+  <h3>評価アドレス : <%= @address %></h3>
+  <h3>トータルリスク : <%= @total_risk %> %</h3>
+  <hr>
+  <h3>項目ごと詳細</h3>
+  <table border="1">
+    <tr>
+      <th>項目</th>
+      <th>リスク</th>
+    </tr>
+    <tr>
+      <td>param1</td>
+      <td><%= @param1 %>%</td>
+    </tr>
+    <tr>
+      <td>param2</td>
+      <td><%= @param2 %>%</td>
+    </tr>
+    <tr>
+      <td>param3</td>
+      <td><%= @param3 %>%</td>
+    </tr>
+    <tr>
+      <td>param4</td>
+      <td><%= @param4 %>%</td>
+    </tr>
+    <tr>
+      <td>param5</td>
+      <td><%= @param5 %>%</td>
+    </tr>
+    <tr>
+      <td>param6</td>
+      <td><%= @param6 %>%</td>
+    </tr>
+    <tr>
+      <td>param7</td>
+      <td><%= @param7 %>%</td>
+    </tr>
+    <tr>
+      <td>param8</td>
+      <td><%= @param8 %>%</td>
+    </tr>
+  </table>
+</body>
+</html>

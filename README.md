@@ -1,5 +1,14 @@
 最終的なアウトプット「アカウントIDを入れると、異常値X%というリスク評価ができるサービス」
 
+## 起動
+```
+$ git clone https://github.com/toshikase/block-analytics.git
+$ cd block-analytics
+$ bundle init --path=vendor/bundle
+$ bundle exec ruby app.rb
+```
+localhost:4567で起動
+
 ## 開発の進め方は下記
 1. 複数Bitcoinアカウントをサンプルとして(まず50くらい)、過去の取引履歴を整理してDBにいれる(5/10)
 2. 説明変数をいくつか設定して、説明変数の重み付けを行う(5/11)
