@@ -20,3 +20,6 @@ iv)  SinatraかRailsかで1ページのアプリを作成
 - 調査したいアカウントを入れるフォームを作る
 - 「調査」ボタンを作る
 - 「調査」ボタンを押すことで、次のページかそのページ内に各パラメータごとの異常値割合とトータルの異常値割合が出てくる
+
+## Mongo接続の参考
+https://docs.mongodb.com/ecosystem/tutorial/ruby-driver-tutorial-2-0/
