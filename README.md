@@ -1,6 +1,6 @@
 最終的なアウトプット「アカウントIDを入れると、異常値X%というリスク評価ができるサービス」
 
-## 起動
+## Sinatra起動
 ```
 $ git clone https://github.com/toshikase/block-analytics.git
 $ cd block-analytics
@@ -8,6 +8,14 @@ $ bundle init --path=vendor/bundle
 $ bundle exec ruby app.rb
 ```
 localhost:4567で起動
+
+## Mongoにデータを収集
+```
+$ cd block-analytics
+$ ruby analytics.rb
+```
+- mongoDBを確認してみて、 `analytics` データベースの `logs` コレクションにJSONが格納されていればOK
+
 
 ## 開発の進め方は下記
 1. 複数Bitcoinアカウントをサンプルとして(まず50くらい)、過去の取引履歴を整理してDBにいれる(5/10)
@@ -29,6 +37,9 @@ iv)  SinatraかRailsかで1ページのアプリを作成
 - 調査したいアカウントを入れるフォームを作る
 - 「調査」ボタンを作る
 - 「調査」ボタンを押すことで、次のページかそのページ内に各パラメータごとの異常値割合とトータルの異常値割合が出てくる
+
+## TODO
+- 実在するアドレス以外を分析しようとした時のエラー処理
 
 ## Mongo接続の参考
 https://docs.mongodb.com/ecosystem/tutorial/ruby-driver-tutorial-2-0/

@@ -9,7 +9,6 @@ require 'json'
 require_relative 'models/analyze'
 
 get '/' do
-  @title = "ハローワールド"
   erb :index
 end
 

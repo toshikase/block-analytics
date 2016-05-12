@@ -6,7 +6,6 @@ require 'uri'
 require 'json'
 
 # addressを50個配列にする
-
 accounts = Array['13KyXfddwDibYKXE68zpKAfWqoTiw5TnEm', '13KyXfddwDibYKXE68zpKAfWqoTiw5TnEm']
 
 accounts.each do |account|
