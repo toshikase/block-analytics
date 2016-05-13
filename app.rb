@@ -29,6 +29,9 @@ post '/analyze' do
   # TODO:なので下記の配列は実際は削除する
   risks = Array[20, 10, 30, 40, 5, 0, 1, 30, 1]
 
+
+  # MEMO:下記は一つづつ配列に入れなくてもrisksをそのままviewに持っていける
+  # から時間があれば修正
   @total_risk = risks[0]
   @param1 = risks[1]
   @param2 = risks[2]
